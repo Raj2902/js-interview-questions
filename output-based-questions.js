@@ -31,6 +31,40 @@ var name = 'John'
 //undefined
 //undefined
 
+//Understanding question no 2
+//hoisting is possible through all the declarative as let, var and const
+// the only this that changes is the output that it gives it case of var
+//it will give undefined because declarating varibales with initially decalres undefined in it
+//indicatin space has been created with no values so when accessed ealier gives undefined but no error.
+//in case of let and const the space are created but undefined is not given to them initially so when we try to
+//access them before gives error that the value cant be accessed before initialization
+
+//case of hoisting with var
+/*
+when we declare a varibale using var a memory is created for it with value as undefined indicating there is a space created for the varibale
+by there has been no value initialized to it till now so undefined.
+*/
+console.log(a); //as a is declared var the scope is global and as it beign assesed before intiliaztion being declared var its undefined
+var a = 5;
+// and
+console.log(name);
+var name = "John";
+
+//case of dead temporal zone
+/*
+when we try to achieve 
+*/
+console.log(a); //as a is declared let, the scope is script and as it beign assesed before intiliaztion being declared let as <value unavailable>
+//hence giving error, this state is called temporal dead zone the state between MEP and CEP memory execution phase and code execution phase.
+let a = 5;
+// and
+console.log(name);
+let name = "John";
+
+//SHORT AND SIMPLE HOISTING WITH VAR STORES VALUE AS UNDEFNIED IN GLOBAL SCOPE RESULTING IN UNDFFINED WITH NO ERROR/
+//HOSITING WITH LET AND CONST STORES VALUES AS <VALUE UNAVAILABLE> IN SCRIPT SCOPE GIVING ERROR
+
+
 // Question 3 (Shadowing)
 var x = 20
 
