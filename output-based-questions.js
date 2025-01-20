@@ -13,13 +13,23 @@ console.log(b) //when the above will give the error the code execution will stop
 //Answer : Not defined is a state where variables dont even exists giving an error whereas, undefined is state where varible is there but no
 //value is assigned to it.
 
+//output:
+//1
+//2
+//error a is not defined
+
 
 // Question 2 (Hoisting)
-console.log(a)
+console.log(a) //this will give undefined as we are trying to acess the variable before initializing but being a var declarative it gives undefined due to
+              //the concept of hositing.
 var a = 5
 // and
-console.log(name)
+console.log(name) //trying to access the value before initializing before declared with var initialially it contians undefined.
 var name = 'John'
+
+//output:
+//undefined
+//undefined
 
 // Question 3 (Shadowing)
 var x = 20
