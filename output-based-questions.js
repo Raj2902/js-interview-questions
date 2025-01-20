@@ -171,8 +171,8 @@ function abc() {
 const value = new abc()
 
 // Question 15
-// function foo(a, ...rest, c) {
-//   console.log(a, rest, c);
+// function foo(a, ...rest) {
+//   console.log(a, rest);
 // }
 
 // foo(1, 2, 3, 4, 5)
