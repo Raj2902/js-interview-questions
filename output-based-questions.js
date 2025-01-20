@@ -3,12 +3,16 @@
   let a = 1
   let b = 2
 
-  console.log(a)
-  console.log(b)
+  console.log(a); //this will give the output in the console as 1
+  console.log(b); //this will give the output in the console as 2
 }
+console.log(a) //this will give an error as a in not defined , note this is an error and not undefined
+console.log(b) //when the above will give the error the code execution will stop js being an interpreter so this line wont be excuted.
 
-console.log(a)
-console.log(b)
+//Question arises what's the diffrence between not defined and undeifned :
+//Answer : Not defined is a state where variables dont even exists giving an error whereas, undefined is state where varible is there but no
+//value is assigned to it.
+
 
 // Question 2 (Hoisting)
 console.log(a)
